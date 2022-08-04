@@ -13,7 +13,14 @@
       <click-counter></click-counter>
     </div>
 
+
     <script src='https://unpkg.com/vue@3'></script>
+      <!-- Vue.js 読み込むための CDN -->
+
+    <!-- コンポーネントテンプレートは外部ファイルを読み込む前に… -->
+    <script type='text/x-template' id='click-counter-template'>
+      <button @click="count++">the count is: {{count}}</button>
+    </script>
     <script src='app.js'></script>
   </body>
 </html>
